@@ -1,0 +1,1108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes float-delayed {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(233, 30, 99, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(233, 30, 99, 0.6);
+    }
+}
+
+/* Animation Utility Classes */
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-shimmer {
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float-delayed 8s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Animation Delay Classes */
+.animation-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+    animation-delay: 0.6s;
+}
+
+.animation-delay-800 {
+    animation-delay: 0.8s;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
+}
+
+/* Sophisticated Color Palette Variables */
+:root {
+    --rose-primary: #E91E63;
+    --rose-light: #F8BBD9;
+    --rose-dark: #AD1457;
+    --gold-primary: #FFD700;
+    --gold-light: #FFF8DC;
+    --gold-dark: #B8860B;
+    --black-primary: #1A1A1A;
+    --black-light: #2D2D2D;
+    --white-primary: #FFFFFF;
+    --white-off: #FAFAFA;
+    --gray-elegant: #F5F5F5;
+}
+
+/* Base Styles - Sophisticated & Clean */
+body {
+    font-family: 'Coterie', 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--white-primary);
+    color: var(--black-primary);
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+/* Logo Styling */
+.logo {
+    color: #fda4af; /* text-rose-300 equivalent */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Coterie', 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--black-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+/* Elegant Typography Hierarchy */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--black-light);
+    margin-bottom: 1.25rem;
+}
+
+/* Sophisticated Gradient Sections */
+.hero-gradient {
+    background: linear-gradient(135deg, 
+        rgba(233, 30, 99, 0.08) 0%, 
+        rgba(255, 215, 0, 0.08) 50%,
+        rgba(26, 26, 26, 0.02) 100%);
+    backdrop-filter: blur(1px);
+}
+
+/* Elegant Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, var(--rose-primary) 0%, var(--rose-dark) 100%);
+    color: var(--white-primary);
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    box-shadow: 0 4px 14px rgba(233, 30, 99, 0.25);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--rose-dark) 0%, var(--rose-primary) 100%);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+    color: var(--black-primary);
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    box-shadow: 0 4px 14px rgba(255, 215, 0, 0.3);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 100%);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Minimalist Button Alternative */
+.btn-minimal {
+    background: transparent;
+    color: var(--black-primary);
+    border: 2px solid var(--rose-primary);
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-minimal:hover {
+    background: var(--rose-primary);
+    color: var(--white-primary);
+    transform: translateY(-2px);
+}
+
+/* Sophisticated Navigation Styles */
+.nav-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(233, 30, 99, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    position: relative;
+    color: var(--black-primary);
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.01em;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--rose-primary), var(--gold-primary));
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1px;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link:hover {
+    color: var(--rose-primary);
+    background: rgba(233, 30, 99, 0.05);
+    transform: translateY(-1px);
+}
+
+/* Sophisticated Card Styles */
+.service-card {
+    background: var(--white-primary);
+    border: 1px solid rgba(233, 30, 99, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rose-primary), var(--gold-primary));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(233, 30, 99, 0.15);
+    border-color: rgba(233, 30, 99, 0.2);
+}
+
+.service-card:hover .fas {
+    transform: scale(1.15) rotate(5deg);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Elegant Product Card Styles */
+.bg-white.rounded-lg.shadow-md {
+    background: var(--white-primary);
+    border: 1px solid var(--gray-elegant);
+    border-radius: 1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bg-white.rounded-lg.shadow-md:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+    border-color: rgba(233, 30, 99, 0.15);
+}
+
+/* Minimal Card Layout */
+.card-minimal {
+    background: var(--white-primary);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid var(--gray-elegant);
+    transition: all 0.3s ease;
+}
+
+.card-minimal:hover {
+    border-color: var(--rose-light);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1);
+}
+
+/* Icon Hover Effects */
+.fas, .fab {
+    transition: all 0.3s ease;
+}
+
+.text-amber-400 .fas:hover {
+    color: #D4AF37;
+    transform: scale(1.1);
+}
+
+/* Link Hover Effects */
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Sophisticated Form Styling */
+input, select, textarea {
+    background: var(--white-primary);
+    border: 2px solid var(--gray-elegant);
+    border-radius: 0.5rem;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    color: var(--black-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: var(--rose-light);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.08);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--rose-primary);
+    box-shadow: 0 0 0 4px rgba(233, 30, 99, 0.15);
+    outline: none;
+    background: var(--white-primary);
+}
+
+/* Form Labels */
+label {
+    color: var(--black-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Sophisticated Social Media Styling */
+.w-10.h-10.rounded-full {
+    background: var(--white-primary);
+    border: 2px solid var(--gray-elegant);
+    color: var(--black-light);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.w-10.h-10.rounded-full::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--rose-primary), var(--gold-primary));
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.w-10.h-10.rounded-full:hover::before {
+    left: 0;
+}
+
+.w-10.h-10.rounded-full:hover {
+    color: var(--white-primary);
+    border-color: transparent;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);
+}
+
+/* Sophisticated Logo Styling */
+.logo {
+    font-family: 'Coterie', 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    background: linear-gradient(135deg, var(--rose-primary), var(--gold-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: -0.01em;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.logo span {
+    background: linear-gradient(135deg, var(--gold-primary), var(--rose-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sophisticated Spacing System */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.section-padding-sm {
+    padding: 3rem 0;
+}
+
+.section-padding-lg {
+    padding: 7rem 0;
+}
+
+/* Clean Container Styles */
+.container-elegant {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Elegant Dividers */
+.divider-elegant {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rose-light), transparent);
+    margin: 3rem 0;
+    border: none;
+}
+
+/* Sophisticated Text Styles */
+.text-elegant {
+    color: var(--black-light);
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.text-accent {
+    color: var(--rose-primary);
+    font-weight: 600;
+}
+
+.text-gold {
+    color: var(--gold-primary);
+    font-weight: 600;
+}
+
+/* Smooth Scrolling Enhancement */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Hover Improvements */
+.hover\:text-rose-300:hover {
+    transform: translateX(2px);
+}
+
+.hover\:bg-rose-50:hover {
+    background-color: rgba(230, 169, 169, 0.1) !important;
+}
+
+/* Mobile Menu Enhancements */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+#mobile-menu a:hover {
+    transform: translateX(5px);
+    padding-left: 1rem;
+}
+
+/* Contact Section Enhancements */
+.bg-gradient-to-br {
+    transition: all 0.3s ease;
+}
+
+.bg-gradient-to-br:hover {
+    background: linear-gradient(135deg, rgba(230,169,169,0.3) 0%, rgba(212,175,55,0.3) 100%);
+}
+
+/* Additional hover effects and improvements */
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Icon hover effects */
+i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Enhanced card animations */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+.group:hover .group-hover\:translate-x-1 {
+    transform: translateX(0.25rem);
+}
+
+.group:hover .group-hover\:translate-y-1 {
+    transform: translateY(0.25rem);
+}
+
+/* Enhanced gradient hover effects */
+.bg-gradient-to-r:hover {
+    background-size: 110% 110%;
+    transition: background-size 0.3s ease;
+}
+
+/* Contact section hover enhancements */
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transform: translateX(5px);
+}
+
+/* Mobile menu enhancements */
+@media (max-width: 768px) {
+    .mobile-menu {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .mobile-menu a:hover {
+        background-color: rgba(251, 113, 133, 0.1);
+        transform: translateX(5px);
+    }
+}
+
+/* Elegant Animation Utilities */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-up.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Sophisticated Hover States */
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Clean Background Patterns */
+.bg-pattern-subtle {
+    background-image: radial-gradient(circle at 1px 1px, rgba(233, 30, 99, 0.03) 1px, transparent 0);
+    background-size: 20px 20px;
+}
+
+/* Performance Optimizations */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth Transitions for Interactive Elements */
+button, a, .service-card, .product-card, .card-minimal {
+    will-change: transform;
+}
+
+/* Accessible Focus States */
+button:focus, a:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--rose-primary);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+}
+
+/* Elegant Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-elegant);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--rose-primary), var(--gold-primary));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--rose-dark), var(--gold-dark));
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Typography Adjustments */
+    h1 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.875rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    /* Section Spacing */
+    .section-padding {
+        padding: 2.5rem 0;
+    }
+    
+    .container-elegant {
+        padding: 0 1rem;
+    }
+    
+    /* Hero Section Mobile Optimization */
+    .hero-gradient {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    
+    /* Hero Image Container Fix */
+    .hero-gradient .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-gradient .w-full.md\:w-1\/2 {
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    
+    /* Button Adjustments */
+    .btn-primary, .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        width: auto;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    /* Card Grid Responsiveness */
+    .grid {
+        gap: 1.5rem;
+    }
+    
+    /* Image Container Mobile Optimization */
+    .relative.w-64, .relative.w-80, .relative.w-96 {
+        width: 280px !important;
+        height: 280px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Hero Image Specific Fix */
+    .hero-gradient .relative {
+        margin: 0 auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Image Display Fix - Global */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Specific image fixes for all hero sections */
+    img[src*="images/1.jpg"],
+    img[src*="images/2.jpg"],
+    img[src*="images/3.jpg"],
+    img[src*="images/4.jpg"] {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    /* Hero Image Specific Fixes */
+    .hero-gradient img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    /* Ensure all image containers are visible */
+    .hero-gradient .relative,
+    .hero-gradient .relative > div {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Specific targeting for the main hero image container */
+    .hero-gradient .w-64,
+    .hero-gradient .w-80,
+    .hero-gradient .w-96,
+    .hero-gradient .sm\:w-80,
+    .hero-gradient .sm\:h-80,
+    .hero-gradient .md\:w-96,
+    .hero-gradient .md\:h-96 {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Main image with inset-4 class */
+    .hero-gradient .inset-4 {
+        display: block !important;
+        visibility: visible !important;
+        position: absolute !important;
+        top: 1rem !important;
+        right: 1rem !important;
+        bottom: 1rem !important;
+        left: 1rem !important;
+    }
+    
+    /* Ensure the image inside inset-4 is visible */
+    .hero-gradient .inset-4 img {
+        display: block !important;
+        visibility: visible !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    /* Service Cards Mobile */
+    .service-card {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    /* Navigation Mobile Enhancement */
+    .nav-container {
+        padding: 0.5rem 0;
+    }
+    
+    /* Mobile Menu Improvements */
+    #mobile-menu {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.98);
+        border-top: 1px solid rgba(233, 30, 99, 0.1);
+    }
+    
+    #mobile-menu a {
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    #mobile-menu a:hover {
+        background-color: rgba(251, 113, 133, 0.1);
+        transform: translateX(5px);
+        border-radius: 0.5rem;
+    }
+    
+    /* Floating Elements Mobile Adjustment - Only hide decorative elements */
+    .hero-gradient .absolute.top-20,
+    .hero-gradient .absolute.top-40,
+    .hero-gradient .absolute.bottom-32,
+    .hero-gradient .absolute.top-1\/3,
+    .hero-gradient .absolute.top-1\/4,
+    .hero-gradient .absolute.top-3\/4,
+    .hero-gradient .absolute.top-1\/2,
+    .hero-gradient .absolute.bottom-1\/3 {
+        display: none;
+    }
+    
+    /* Keep main image container visible */
+    .hero-gradient .relative .absolute {
+        display: block !important;
+        opacity: 0.8;
+    }
+    
+    /* Ensure hero image container is visible */
+    .hero-gradient .relative {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Make sure the main image is visible */
+    .hero-gradient .relative .absolute.inset-4 {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Form Mobile Optimization */
+    input, textarea, select {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 0.875rem;
+    }
+    
+    /* Footer Mobile */
+    .footer-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    /* Pricing Cards Mobile */
+    .pricing-card {
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+    
+    /* Storefront Section Mobile */
+    #store {
+        text-align: center;
+    }
+    
+    #store h2 {
+        text-align: center;
+    }
+    
+    #store p {
+        text-align: center;
+    }
+    
+    /* Product Cards Mobile - Better Alignment */
+    .grid.grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    /* Individual Product Card Alignment */
+    #store .grid > a {
+        width: 100%;
+        max-width: 180px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Product Card Content Alignment */
+    #store .grid > a > div {
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Storefront Button Alignment */
+    #store .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    /* Center all section titles */
+    section h2 {
+        text-align: center !important;
+    }
+    
+    section h3 {
+        text-align: center !important;
+    }
+    
+    /* Ensure Services and Storefront titles have same font size on mobile */
+    #services h2,
+    #store h2 {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    
+    /* Ensure Services and Storefront titles have same font size */
+    #services h2,
+    #store h2 {
+        font-size: 1.75rem !important;
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    .hero-gradient {
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+        text-align: center;
+    }
+    
+    .relative.w-64, .relative.w-80, .relative.w-96 {
+        width: 240px !important;
+        height: 240px !important;
+        margin: 0 auto !important;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
+    }
+    
+    .section-padding {
+        padding: 2rem 0;
+    }
+    
+    .container-elegant {
+        padding: 0 0.75rem;
+    }
+    
+    /* Product Cards for Very Small Screens */
+    .grid.grid-cols-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    /* Individual Product Cards on Small Screens */
+    #store .grid > a {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /* Storefront Section Alignment */
+    #store {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    #store .text-center {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        text-align: center;
+        padding: 1.25rem;
+    }
+    
+    /* Center all content */
+    section {
+        text-align: center;
+    }
+}
+
+/* Large Mobile/Small Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .relative.w-64, .relative.w-80, .relative.w-96 {
+        width: 320px !important;
+        height: 320px !important;
+        margin: 0 auto !important;
+    }
+    
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-padding {
+        padding: 4rem 0;
+    }
+    
+    /* Ensure images display properly */
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* Center section titles */
+    section h2, section h3 {
+        text-align: center;
+    }
+    
+    /* Ensure Services and Storefront titles have same font size on tablets */
+    #services h2,
+    #store h2 {
+        font-size: 2.5rem !important;
+        text-align: center !important;
+    }
+}
+
+/* Add margin below the Amazon Storefront button */
+#store .text-center a[href*="amazon.com"] {
+    margin-bottom: 2rem !important;
+    display: inline-block;
+}
+
+/* Additional margin for mobile devices */
+@media (max-width: 768px) {
+    #store .text-center a[href*="amazon.com"] {
+        margin-bottom: 1.5rem !important;
+    }
+}

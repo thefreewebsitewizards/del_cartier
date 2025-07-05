@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Cartier Academy - Delanna's Media Productions</title>
+    <link rel="stylesheet" href="spreadsheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coterie:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="nav-container fixed w-full top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="text-2xl font-bold logo">
+                            Delanna<span>'s</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 hover:text-rose-300 px-3 py-2">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-800 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors duration-200">
+                            Services
+                            <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-1">
+                                <a href="content-filming.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Content Filming</a>
+                                <a href="del-cartier-academy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Del Cartier Academy</a>
+                                <a href="media-management.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Media Management</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html#store" class="nav-link text-gray-800 hover:text-rose-300 px-3 py-2">Storefront</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-rose-300 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Home</a>
+                <div class="relative">
+                    <button id="mobile-services-toggle" class="w-full text-left px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md flex items-center justify-between">
+                        Services
+                        <i class="fas fa-chevron-down text-sm"></i>
+                    </button>
+                    <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
+                        <a href="content-filming.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Content Filming</a>
+                        <a href="del-cartier-academy.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Del Cartier Academy</a>
+                        <a href="media-management.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Media Management</a>
+                    </div>
+                </div>
+                <a href="index.html#store" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Storefront</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <!-- Large floating circles -->
+            <div class="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-rose-200 to-rose-300 rounded-full opacity-20 animate-float"></div>
+            <div class="absolute top-20 right-20 w-24 h-24 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full opacity-30 animate-float-delayed"></div>
+            <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-br from-rose-100 to-rose-200 rounded-full opacity-15 animate-float-slow"></div>
+            <div class="absolute bottom-32 right-1/3 w-28 h-28 bg-gradient-to-br from-amber-100 to-amber-200 rounded-full opacity-25 animate-float"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-gradient-to-br from-rose-200 to-amber-200 rounded-full opacity-10 animate-float-delayed"></div>
+            <div class="absolute top-1/3 right-10 w-20 h-20 bg-gradient-to-br from-amber-300 to-rose-300 rounded-full opacity-20 animate-float-slow"></div>
+            
+            <!-- Small particle dots -->
+            <div class="absolute top-1/4 left-1/3 w-2 h-2 bg-rose-400 rounded-full opacity-40 animate-pulse"></div>
+            <div class="absolute top-3/4 right-1/4 w-3 h-3 bg-amber-400 rounded-full opacity-50 animate-pulse-delayed"></div>
+            <div class="absolute bottom-1/4 left-1/5 w-2 h-2 bg-rose-300 rounded-full opacity-30 animate-pulse-slow"></div>
+            <div class="absolute top-1/2 right-1/5 w-2 h-2 bg-amber-300 rounded-full opacity-40 animate-pulse"></div>
+            <div class="absolute bottom-1/3 right-1/2 w-3 h-3 bg-rose-400 rounded-full opacity-35 animate-pulse-delayed"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Your Media Journey <span class="text-amber-500">Starts Here</span></h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Schedule a personalized Zoom session where we'll dive into your media goals and build a strategy that works for you.</p>
+                <button onclick="openBookingModal()" class="btn-secondary text-white font-semibold py-3 px-6 rounded-full inline-block">Schedule Your Session</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academy Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center flex-row-reverse">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Personalized Media Strategy</h2>
+                    <p class="text-lg mb-6">Whether you're just starting out or looking to refine your approach, Del Cartier Academy offers one-on-one guidance tailored to your unique goals and brand vision.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-3 text-rose-300">What We'll Cover:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-amber-400 mt-1 mr-2"></i>
+                                <span>Clarifying your content goals and target audience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-amber-400 mt-1 mr-2"></i>
+                                <span>Building your brand identity and voice</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-amber-400 mt-1 mr-2"></i>
+                                <span>Finding and pitching to collaborators</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-amber-400 mt-1 mr-2"></i>
+                                <span>Tools and platforms to get started</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-amber-400 mt-1 mr-2"></i>
+                                <span>Content planning and scheduling strategies</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <!-- Main Image Container with Enhanced Effects -->
+                        <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
+                            <!-- Animated Background Rings -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-rose-300 via-rose-400 to-amber-300 rounded-full animate-pulse-slow opacity-30"></div>
+                            <div class="absolute inset-2 bg-gradient-to-br from-amber-200 via-rose-300 to-amber-400 rounded-full animate-pulse-slow animation-delay-400 opacity-40"></div>
+                            
+                            <!-- Main Image -->
+                            <div class="absolute inset-4 bg-gradient-to-br from-rose-200 to-amber-200 rounded-full overflow-hidden shadow-2xl animate-glow">
+                                <img src="images/3.jpg" alt="Del Cartier Academy" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                            </div>
+                            
+                            <!-- Floating Decorative Elements -->
+                            <div class="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full shadow-lg animate-float opacity-80">
+                                <div class="w-full h-full flex items-center justify-center text-white">
+                                    <i class="fas fa-graduation-cap text-lg"></i>
+                                </div>
+                            </div>
+                            <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-lg animate-float-delayed opacity-80">
+                                <div class="w-full h-full flex items-center justify-center text-white">
+                                    <i class="fas fa-chalkboard-teacher text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="absolute top-1/4 -left-8 w-10 h-10 bg-gradient-to-br from-rose-300 to-amber-300 rounded-full shadow-lg animate-float animation-delay-600 opacity-70">
+                                <div class="w-full h-full flex items-center justify-center text-white">
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Academy Modules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Module 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-rose-300 mb-4">
+                        <i class="fas fa-bullseye text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Goal Setting & Strategy</h3>
+                    <p class="text-gray-600">Define your content objectives, identify your target audience, and create a roadmap for success.</p>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-amber-400 mb-4">
+                        <i class="fas fa-palette text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Development</h3>
+                    <p class="text-gray-600">Craft your unique brand voice, visual identity, and messaging that resonates with your audience.</p>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-rose-300 mb-4">
+                        <i class="fas fa-calendar-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Planning</h3>
+                    <p class="text-gray-600">Learn to create content calendars, batch content creation, and maintain consistency.</p>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-amber-400 mb-4">
+                        <i class="fas fa-handshake text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaboration & Networking</h3>
+                    <p class="text-gray-600">Discover how to find, approach, and work with brands, influencers, and other creators.</p>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-rose-300 mb-4">
+                        <i class="fas fa-tools text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tools & Platforms</h3>
+                    <p class="text-gray-600">Master the essential tools for content creation, editing, scheduling, and analytics.</p>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="text-amber-400 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Growth & Analytics</h3>
+                    <p class="text-gray-600">Learn to track performance, analyze data, and optimize your content for better results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1-on-1 Strategy Session -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-rose-50 to-amber-50 rounded-lg p-8 md:p-12">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">1-on-1 Strategy Session</h2>
+                    <div class="text-5xl font-bold text-rose-300 mb-4">$150</div>
+                    <p class="text-lg mb-8">90-minute personalized Zoom session covering all academy modules tailored to your specific needs and goals.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="text-left">
+                            <h4 class="font-bold mb-2 text-amber-500">Session Includes:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Personalized strategy development</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Brand audit and recommendations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Content calendar template</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold mb-2 text-rose-300">Bonus Materials:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-gift text-rose-300 mt-1 mr-2"></i>
+                                    <span>Resource toolkit and templates</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-gift text-rose-300 mt-1 mr-2"></i>
+                                    <span>Follow-up email with action items</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-gift text-rose-300 mt-1 mr-2"></i>
+                                    <span>30-day email support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openBookingModal()" class="btn-primary text-white font-semibold py-3 px-8 rounded-full inline-block">Book</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-gray-900">Schedule Your Strategy Session</h2>
+                    <button onclick="closeBookingModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+                </div>
+                <p class="text-gray-600 mt-2">90-minute personalized Zoom session - $150</p>
+            </div>
+            
+            <div class="p-6">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
+                            <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                            <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Current Experience Level *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Complete Beginner</option>
+                            <option value="some">Some Experience</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="refine">Looking to Refine Strategy</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Goals & Challenges *</label>
+                        <textarea rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300" placeholder="Tell me about your current goals, challenges, and what you hope to achieve..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-300">
+                            <option value="">Select preferred time</option>
+                            <option value="morning">Morning (9AM - 12PM)</option>
+                            <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                            <option value="evening">Evening (5PM - 8PM)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex gap-4 pt-4">
+                        <button type="button" onclick="closeBookingModal()" class="bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-full flex-1">Cancel</button>
+                        <button type="submit" class="btn-primary text-white font-semibold py-3 px-6 rounded-full flex-1">Schedule My Strategy Session</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-bold text-rose-300 mb-4">Delanna's Media Productions</div>
+                <p class="text-gray-400 mb-6">Empowering creators to build their media presence</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.instagram.com/del_cartier" target="_blank" class="text-gray-400 hover:text-rose-300 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
