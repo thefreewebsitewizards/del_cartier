@@ -1211,6 +1211,80 @@ button:focus, a:focus, input:focus, select:focus, textarea:focus {
     }
 }
 
+/* Enhanced footer contact centering */
+@media (max-width: 768px) {
+    /* Center contact information more precisely */
+    footer .space-y-4 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Center each contact item */
+    footer .space-y-4 li {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto 1rem auto;
+    }
+    
+    /* Center contact icons and content */
+    footer .flex.items-start {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Center contact icons */
+    footer .flex.items-start i {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+    
+    /* Center contact text content */
+    footer .flex.items-start div {
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Center email and phone links */
+    footer .flex.items-start div a {
+        text-align: center;
+        display: block;
+        word-break: break-word;
+    }
+    
+    /* Center contact labels */
+    footer .flex.items-start div p {
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Additional centering for smaller mobile devices */
+@media (max-width: 480px) {
+    footer .space-y-4 li {
+        margin-bottom: 1.5rem;
+    }
+    
+    footer .flex.items-start {
+        gap: 0.5rem;
+    }
+    
+    /* Ensure email doesn't overflow */
+    footer .break-all {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+}
+
 /* Add these comprehensive responsive improvements to your existing CSS */
 
 /* Base Responsive Improvements */
