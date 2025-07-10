@@ -1105,4 +1105,606 @@ button:focus, a:focus, input:focus, select:focus, textarea:focus {
     #store .text-center a[href*="amazon.com"] {
         margin-bottom: 1.5rem !important;
     }
+    
+    /* Center footer content on mobile */
+    footer {
+        text-align: center;
+    }
+    
+    /* Center footer grid items */
+    footer .grid {
+        text-align: center;
+        justify-items: center;
+    }
+    
+    /* Center brand section */
+    footer .lg\:col-span-2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Center logo */
+    footer .logo {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /* Center brand description */
+    footer .lg\:col-span-2 p {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /* Center social media icons */
+    footer .flex.space-x-4 {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    /* Center quick links section */
+    footer h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Center quick links list */
+    footer ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Center individual quick links */
+    footer ul li {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Center contact information */
+    footer .space-y-4 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Center contact items */
+    footer .space-y-4 li {
+        text-align: center;
+        justify-content: center;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    /* Center contact icons and text */
+    footer .flex.items-start {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    /* Center bottom section */
+    footer .border-t {
+        text-align: center;
+    }
+    
+    /* Center copyright and collaboration button */
+    footer .flex.flex-col.md\:flex-row {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Center copyright text */
+    footer .text-center.md\:text-left {
+        text-align: center !important;
+    }
+    
+    /* Center collaboration button */
+    footer .text-center a {
+        margin: 0 auto;
+        display: inline-flex;
+    }
+}
+
+/* Add these comprehensive responsive improvements to your existing CSS */
+
+/* Base Responsive Improvements */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Container Responsive Improvements */
+.container, .container-elegant {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Typography Responsive Scaling */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .container-elegant {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.375rem;
+    }
+    
+    /* Navigation Improvements */
+    .nav-container {
+        padding: 0.75rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Service Cards Tablet */
+    .service-card {
+        padding: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Grid Adjustments */
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+/* Enhanced Mobile Responsive Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        line-height: 1.5;
+    }
+    
+    /* Typography Mobile */
+    h1 {
+        font-size: 2.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.875rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 0.75rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    /* Container Mobile */
+    .container-elegant {
+        padding: 0 1rem;
+    }
+    
+    /* Section Spacing Mobile */
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    /* Grid Mobile - Single Column */
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3,
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Button Mobile */
+    .btn-primary, .btn-secondary, .btn-minimal {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* Navigation Mobile Enhancement */
+    .nav-container {
+        padding: 0.5rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    /* Mobile Menu */
+    #mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(233, 30, 99, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    #mobile-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: var(--black-primary);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(233, 30, 99, 0.05);
+        transition: all 0.3s ease;
+    }
+    
+    #mobile-menu a:hover {
+        background: rgba(233, 30, 99, 0.05);
+        color: var(--rose-primary);
+        transform: translateX(10px);
+    }
+    
+    /* Hero Section Mobile */
+    .hero-gradient {
+        padding: 4rem 0 3rem;
+        text-align: center;
+        min-height: auto;
+    }
+    
+    /* Hero Image Mobile */
+    .relative.w-64, .relative.w-80, .relative.w-96 {
+        width: 280px !important;
+        height: 280px !important;
+        margin: 2rem auto !important;
+    }
+    
+    /* Service Cards Mobile */
+    .service-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* Product Cards Mobile */
+    .bg-white.rounded-lg.shadow-md {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    /* Form Elements Mobile */
+    input, textarea, select {
+        width: 100%;
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    /* Footer Mobile */
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    footer .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    footer h3 {
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+    }
+    
+    footer p, footer a {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Social Media Icons Mobile */
+    .flex.space-x-4 {
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    /* Image Responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* Text Alignment Mobile */
+    .text-left {
+        text-align: center !important;
+    }
+    
+    /* Spacing Adjustments */
+    .space-y-4 > * + * {
+        margin-top: 1rem;
+    }
+    
+    .space-y-6 > * + * {
+        margin-top: 1.5rem;
+    }
+    
+    .space-y-8 > * + * {
+        margin-top: 2rem;
+    }
+}
+
+/* Small Mobile Devices Enhanced */
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+    
+    /* Typography Extra Small */
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* Container Extra Small */
+    .container-elegant {
+        padding: 0 0.75rem;
+    }
+    
+    /* Section Spacing Extra Small */
+    .section-padding {
+        padding: 2rem 0;
+    }
+    
+    /* Hero Image Extra Small */
+    .relative.w-64, .relative.w-80, .relative.w-96 {
+        width: 240px !important;
+        height: 240px !important;
+    }
+    
+    /* Button Extra Small */
+    .btn-primary, .btn-secondary, .btn-minimal {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.95rem;
+        max-width: 240px;
+    }
+    
+    /* Service Cards Extra Small */
+    .service-card {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Navigation Extra Small */
+    #mobile-menu a {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Ensure all footer text is centered */
+    footer * {
+        text-align: center !important;
+    }
+    
+    /* Center all flex containers */
+    footer .flex {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    /* Center grid items */
+    footer .grid {
+        place-items: center;
+        text-align: center;
+    }
+    
+    /* Reduce padding for small screens */
+    footer {
+        padding: 2rem 1rem;
+    }
+    
+    /* Center email with better wrapping */
+    footer a[href^="mailto:"] {
+        word-break: break-all;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Large Screens Optimization */
+@media (min-width: 1200px) {
+    .container-elegant {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+    
+    .section-padding {
+        padding: 6rem 0;
+    }
+    
+    /* Grid Large Screens */
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1400px) {
+    .container-elegant {
+        max-width: 1400px;
+        padding: 0 3rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .nav-container,
+    #mobile-menu,
+    .btn-primary,
+    .btn-secondary,
+    .btn-minimal {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --rose-primary: #D81B60;
+        --gold-primary: #F57F17;
+        --black-primary: #000000;
+        --white-primary: #FFFFFF;
+    }
+    
+    .btn-primary, .btn-secondary {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black-primary: #FFFFFF;
+        --black-light: #E0E0E0;
+        --white-primary: #121212;
+        --white-off: #1E1E1E;
+        --gray-elegant: #2D2D2D;
+    }
+    
+    body {
+        background-color: var(--white-primary);
+        color: var(--black-primary);
+    }
+    
+    .nav-container {
+        background: rgba(18, 18, 18, 0.95);
+        border-bottom: 1px solid rgba(233, 30, 99, 0.2);
+    }
+    
+    .service-card,
+    .bg-white.rounded-lg.shadow-md {
+        background: var(--white-off);
+        border-color: rgba(233, 30, 99, 0.2);
+    }
 }
