@@ -1908,34 +1908,135 @@ html {
     }
 }
 
-/* Emergency fix for white text issues */
-body, body * {
-    color: #1a1a1a !important;
+/* Text Visibility Fix - Comprehensive Solution */
+body {
+    color: var(--black-primary) !important;
 }
 
-/* Restore specific colors where needed */
+/* Ensure all text elements are visible */
+h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th, label {
+    color: var(--black-primary) !important;
+}
+
+/* Preserve specific design colors */
 .text-white, .text-white * {
     color: white !important;
 }
 
+/* Logo gradient text with fallback */
 .logo {
-    color: #E91E63 !important;
+    color: #E91E63 !important; /* Fallback */
+    background: linear-gradient(135deg, var(--rose-primary), var(--gold-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
+/* Logo span with fallback */
+.logo span {
+    color: #FFD700 !important; /* Fallback */
+    background: linear-gradient(135deg, var(--gold-primary), var(--rose-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Button text colors */
 .btn-primary, .btn-primary * {
     color: white !important;
 }
 
 .btn-secondary, .btn-secondary * {
-    color: #1a1a1a !important;
+    color: var(--black-primary) !important;
 }
 
-/* Comment out or remove the dark mode section for now */
-/*
-@media (prefers-color-scheme: dark) {
-    // ... existing code ...
+.btn-minimal {
+    color: var(--black-primary) !important;
 }
-*/
+
+.btn-minimal:hover {
+    color: white !important;
+}
+
+/* Navigation text */
+.nav-link {
+    color: var(--black-primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--rose-primary) !important;
+}
+
+/* Mobile menu text */
+#mobile-menu a {
+    color: #374151 !important;
+}
+
+#mobile-menu a:hover {
+    color: #1f2937 !important;
+}
+
+/* Service card text */
+.service-card h3, .service-card p {
+    color: var(--black-primary) !important;
+}
+
+/* Form elements */
+input, textarea, select {
+    color: var(--black-primary) !important;
+    background-color: white !important;
+}
+
+label {
+    color: var(--black-primary) !important;
+}
+
+/* Footer text */
+footer, footer * {
+    color: var(--black-primary) !important;
+}
+
+/* Preserve icon colors */
+.text-amber-400, .text-rose-300, .text-rose-400, .text-rose-500 {
+    color: inherit !important;
+}
+
+/* Icon hover effects preserved */
+.fas.text-amber-400 {
+    color: #fbbf24 !important;
+}
+
+.fas.text-amber-400:hover {
+    color: #D4AF37 !important;
+}
+
+/* Social media icon colors */
+.w-10.h-10.rounded-full {
+    color: var(--black-light) !important;
+}
+
+.w-10.h-10.rounded-full:hover {
+    color: white !important;
+}
+
+/* Dropdown menu text */
+.group .absolute a {
+    color: #374151 !important;
+}
+
+.group .absolute a:hover {
+    color: #f43f5e !important;
+}
+
+/* Ensure hero text is visible */
+.hero-gradient h1, .hero-gradient p {
+    color: var(--black-primary) !important;
+}
+
+/* Contact section text */
+.contact-item {
+    color: var(--black-primary) !important;
+}
 
 /* High Contrast Mode */
 @media (prefers-contrast: high) {
@@ -1948,5 +2049,14 @@ body, body * {
     
     .btn-primary, .btn-secondary {
         border: 2px solid currentColor;
+    }
+    
+    /* Ensure text visibility in high contrast */
+    body, body * {
+        color: var(--black-primary) !important;
+    }
+    
+    .text-white, .text-white * {
+        color: white !important;
     }
 }
