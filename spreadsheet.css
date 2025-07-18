@@ -1,6 +1,156 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+/* Enhanced fix for white text issues while preserving original colors */
+
+/* Base text color fix */
+body {
+    color: #1a1a1a !important;
+}
+
+/* Navigation text */
+.nav-link, nav a {
+    color: #1a1a1a !important;
+}
+
+.nav-link:hover, nav a:hover {
+    color: #E91E63 !important;
+}
+
+/* Mobile menu text */
+#mobile-menu a {
+    color: #374151 !important;
+}
+
+#mobile-menu a:hover {
+    color: #e11d48 !important;
+}
+
+/* Preserve original icon colors */
+.text-amber-400, .text-amber-400 i, .text-amber-400 .fas {
+    color: #fbbf24 !important;
+}
+
+.text-rose-300, .text-rose-300 i, .text-rose-300 .fas {
+    color: #fda4af !important;
+}
+
+.text-rose-400, .text-rose-400 i, .text-rose-400 .fas {
+    color: #fb7185 !important;
+}
+
+/* Service card icon colors */
+.service-card .text-amber-400 {
+    color: #fbbf24 !important;
+}
+
+.service-card .text-amber-400:hover {
+    color: #f59e0b !important;
+}
+
+/* Hover effects for service cards */
+.service-card:hover h3 {
+    color: #fb7185 !important;
+}
+
+.service-card:hover .text-rose-300 {
+    color: #fb7185 !important;
+}
+
+/* Logo gradient colors */
+.logo {
+    color: #E91E63 !important;
+    background: linear-gradient(135deg, #E91E63, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Fallback for browsers that don't support gradient text */
+@supports not (-webkit-background-clip: text) {
+    .logo {
+        color: #E91E63 !important;
+    }
+}
+
+/* Button colors */
+.btn-primary, .btn-primary * {
+    color: white !important;
+}
+
+.btn-secondary, .btn-secondary * {
+    color: #1a1a1a !important;
+}
+
+/* Preserve gradient text in hero section */
+.bg-gradient-to-r.from-rose-500.via-rose-600.to-amber-500 {
+    background: linear-gradient(to right, #ef4444, #dc2626, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Fallback for gradient text */
+@supports not (-webkit-background-clip: text) {
+    .bg-gradient-to-r.from-rose-500.via-rose-600.to-amber-500 {
+        color: #dc2626 !important;
+    }
+}
+
+/* Preserve white text where intended */
+.text-white, .text-white * {
+    color: white !important;
+}
+
+/* Preserve specific text colors */
+.text-black-600 {
+    color: #4b5563 !important;
+}
+
+.text-black-700 {
+    color: #374151 !important;
+}
+
+.text-black-800 {
+    color: #1f2937 !important;
+}
+
+/* Floating decorative elements colors */
+.hero-gradient .absolute .fas {
+    color: white !important;
+}
+
+/* Ensure dropdown menu colors */
+.group .absolute a {
+    color: #374151 !important;
+}
+
+.group .absolute a:hover {
+    color: #f43f5e !important;
+}
+
+/* Form text colors */
+form label {
+    color: #374151 !important;
+}
+
+form input, form textarea, form select {
+    color: #1f2937 !important;
+}
+
+/* Footer text colors */
+footer h3 {
+    color: #1f2937 !important;
+}
+
+footer p, footer a {
+    color: #4b5563 !important;
+}
+
+footer a:hover {
+    color: #E91E63 !important;
+}
+
 /* Animation Keyframes */
 @keyframes fadeInUp {
     from {
