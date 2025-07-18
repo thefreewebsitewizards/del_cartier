@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Coterie:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="spreadsheet.css">
+    
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-black-800">
     <!-- Navigation -->
     <nav class="nav-container fixed w-full top-0 z-50 bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,26 +23,26 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">Home</a>
+                    <a href="#home" class="nav-link text-black-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">Home</a>
                     <div class="relative group">
-                        <button class="text-gray-800 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300 hover:bg-rose-50 transform hover:scale-105">
+                        <button class="text-black-800 hover:text-rose-300 px-3 py-2 rounded-md flex items-center transition-all duration-300 hover:bg-rose-50 transform hover:scale-105">
                             Services
                             <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
                         <div class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                             <div class="py-1">
-                                <a href="content-filming.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Content Filming</a>
-                                <a href="del-cartier-academy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Del Cartier Academy</a>
-                                <a href="media-management.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Media Management</a>
+                                <a href="content-filming.html" class="block px-4 py-2 text-sm text-black-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Content Filming</a>
+                                <a href="del-cartier-academy.html" class="block px-4 py-2 text-sm text-black-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Del Cartier Academy</a>
+                                <a href="media-management.html" class="block px-4 py-2 text-sm text-black-700 hover:bg-rose-50 hover:text-rose-600 transition-colors duration-200">Media Management</a>
                             </div>
                         </div>
                     </div>
-                    <a href="#about" class="nav-link text-gray-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">About</a>
-                    <a href="#partnerships" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Partnerships</a>
-                    <a href="#store" class="nav-link text-gray-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">Storefront</a>
+                    <a href="#about" class="nav-link text-black-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">About</a>
+                    <a href="#partnerships" class="block px-3 py-2 text-black-800 hover:bg-rose-50 rounded-md">Partnerships</a>
+                    <a href="#store" class="nav-link text-black-800 hover:text-rose-300 transition-all duration-300 px-3 py-2 rounded-lg hover:bg-rose-50 transform hover:scale-105">Storefront</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-800 hover:text-rose-300 focus:outline-none">
+                    <button id="mobile-menu-button" class="text-black-800 hover:text-rose-300 focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -50,21 +51,21 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Home</a>
+                <a href="#home" class="block px-3 py-2 text-black-100 hover:bg-rose-50 rounded-md">Home</a>
                 <div class="relative">
-                    <button id="mobile-services-toggle" class="w-full text-left px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md flex items-center justify-between">
+                    <button id="mobile-services-toggle" class="w-full text-left px-3 py-2 text-gray-700 hover:bg-rose-50 rounded-md flex items-center justify-between">
                         Services
-                        <i class="fas fa-chevron-down text-sm"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
-                        <a href="content-filming.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Content Filming</a>
-                        <a href="del-cartier-academy.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Del Cartier Academy</a>
-                        <a href="media-management.html" class="block px-3 py-2 text-gray-600 hover:bg-rose-50 rounded-md text-sm">Media Management</a>
+                        <a href="content-filming.html" class="block px-3 py-2 text-black-600 hover:bg-rose-50 rounded-md text-sm">Content Filming</a>
+                        <a href="del-cartier-academy.html" class="block px-3 py-2 text-black-600 hover:bg-rose-50 rounded-md text-sm">Del Cartier Academy</a>
+                        <a href="media-management.html" class="block px-3 py-2 text-black-600 hover:bg-rose-50 rounded-md text-sm">Media Management</a>
                     </div>
                 </div>
-                <a href="#about" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">About</a>
-                <a href="#partnerships" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Partnerships</a>
-                <a href="#store" class="block px-3 py-2 text-gray-800 hover:bg-rose-50 rounded-md">Storefront</a>
+                <a href="#about" class="block px-3 py-2 text-black-800 hover:bg-rose-50 rounded-md">About</a>
+                <a href="#partnerships" class="block px-3 py-2 text-black-800 hover:bg-rose-50 rounded-md">Partnerships</a>
+                <a href="#store" class="block px-3 py-2 text-black-800 hover:bg-rose-50 rounded-md">Storefront</a>
             </div>
         </div>
     </nav>
@@ -93,9 +94,9 @@
                     <!-- Enhanced Typography with Animations -->
                     <div class="animate-fadeInUp">
                         <h1 class="font-serif leading-none mb-6 md:mb-8">
-                            <span class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-gray-600 mb-2 tracking-wide">Welcome to</span>
+                            <span class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-black-600 mb-2 tracking-wide">Welcome to</span>
                             <span class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-rose-500 via-rose-600 to-amber-500 bg-clip-text text-transparent animate-shimmer mb-2" style="font-family: 'Playfair Display', serif;">Delanna's</span>
-                            <span class="block text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-800 tracking-tight" style="font-family: 'Montserrat', sans-serif;">Media Productions</span>
+                            <span class="block text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-black-800 tracking-tight" style="font-family: 'Montserrat', sans-serif;">Media Productions</span>
                         </h1>
                     </div>
                     
@@ -165,7 +166,7 @@
                         <i class="fas fa-video text-3xl md:text-4xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 group-hover:text-rose-400 transition-colors duration-300">Content Filming</h3>
-                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">Professional filming services for social media, websites, and campaigns.</p>
+                    <p class="text-black-600 mb-3 md:mb-4 text-sm md:text-base">Professional filming services for social media, websites, and campaigns.</p>
                     <div class="text-rose-300 font-semibold group-hover:text-rose-400 transition-all duration-300 inline-flex items-center text-sm md:text-base">
                         Learn more 
                         <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -178,7 +179,8 @@
                         <i class="fas fa-graduation-cap text-3xl md:text-4xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 group-hover:text-rose-400 transition-colors duration-300">Del Cartier Academy</h3>
-                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">Personalized Zoom sessions to build your media strategy.</p>
+                    <p class="text-black-600 mb-3 md:mb-4 text-sm md:text-base">Personalized Zoom sessions to build your media strategy.</p>
+
                     <div class="text-rose-300 font-semibold group-hover:text-rose-400 transition-all duration-300 inline-flex items-center text-sm md:text-base">
                         Learn more 
                         <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -191,7 +193,7 @@
                         <i class="fas fa-tasks text-3xl md:text-4xl"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 group-hover:text-rose-400 transition-colors duration-300">Media Management</h3>
-                    <p class="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">Full-service content creation and posting strategy.</p>
+                    <p class="text-black-600 mb-3 md:mb-4 text-sm md:text-base">Full-service content creation and posting strategy.</p>
                     <div class="text-rose-300 font-semibold group-hover:text-rose-400 transition-all duration-300 inline-flex items-center text-sm md:text-base">
                         Learn more 
                         <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -209,7 +211,7 @@
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
                     About <span class="text-rose-500">Me</span>
                 </h2>
-                <p class="text-lg md:text-xl text-gray-600">Lifestyle Content Creator & Visual Storyteller</p>
+                <p class="text-lg md:text-xl text-black-600">Lifestyle Content Creator & Visual Storyteller</p>
             </div>
             
             <div class="max-w-4xl mx-auto">
@@ -245,8 +247,8 @@
                     <!-- Right Column - About Content -->
                     <div class="text-center lg:text-left">
                         <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">Meet Delanna</h3>
-                            <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                            <h3 class="text-xl md:text-2xl font-bold text-black-800 mb-4 md:mb-6">Meet Delanna</h3>
+                            <p class="text-black-600 text-sm md:text-base leading-relaxed mb-4">
                                 I'm Delanna, a lifestyle content creator with a passion for uncovering hidden gems and capturing cinematic moments. I share these discoveries with a highly engaged audience, all eager to explore the wonders of life.
                             </p>
                             
@@ -272,14 +274,14 @@
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
                     Brand Partnerships & <span class="text-rose-500">Content Creation</span>
                 </h2>
-                <p class="text-lg md:text-xl text-gray-600 mb-2">(Collaborate With Me)</p>
+                <p class="text-lg md:text-xl text-black-600 mb-2">(Collaborate With Me)</p>
                 <div class="w-24 h-1 bg-gradient-to-r from-rose-400 to-amber-400 mx-auto rounded-full"></div>
             </div>
             
             <!-- Collaboration Types -->
             <div class="max-w-5xl mx-auto mb-8 md:mb-12">
                 <div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-6 md:p-10 border border-white/20">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 md:mb-8 text-center">
+                    <h3 class="text-xl md:text-2xl font-bold text-black-800 mb-6 md:mb-8 text-center">
                         Types of Collaborations I Offer
                     </h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -287,57 +289,57 @@
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-blog text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Sponsored Posts</span>
-                            <span class="text-gray-500 text-xs mt-1">(Blog, Instagram, etc.)</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Sponsored Posts</span>
+                            <span class="text-black-500 text-xs mt-1">(Blog, Instagram, etc.)</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-amber-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-amber-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-share-alt text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Social Media</span>
-                            <span class="text-gray-500 text-xs mt-1">Campaigns</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Social Media</span>
+                            <span class="text-black-500 text-xs mt-1">Campaigns</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-rose-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-rose-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-star text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Product</span>
-                            <span class="text-gray-500 text-xs mt-1">Reviews</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Product</span>
+                            <span class="text-black-500 text-xs mt-1">Reviews</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-amber-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-amber-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-gift text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Giveaways &</span>
-                            <span class="text-gray-500 text-xs mt-1">Contests</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Giveaways &</span>
+                            <span class="text-black-500 text-xs mt-1">Contests</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-rose-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-rose-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-handshake text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Brand</span>
-                            <span class="text-gray-500 text-xs mt-1">Ambassadorships</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Brand</span>
+                            <span class="text-black-500 text-xs mt-1">Ambassadorships</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-amber-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-amber-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-camera text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Content Creation</span>
-                            <span class="text-gray-500 text-xs mt-1">(Photo, Video, Writing)</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Content Creation</span>
+                            <span class="text-black-500 text-xs mt-1">(Photo, Video, Writing)</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-rose-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-rose-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-calendar-alt text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Event</span>
-                            <span class="text-gray-500 text-xs mt-1">Appearances</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Event</span>
+                            <span class="text-black-500 text-xs mt-1">Appearances</span>
                         </div>
                         <div class="group flex flex-col items-center p-4 md:p-6 bg-gradient-to-br from-amber-50 to-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 border border-amber-100">
                             <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-lightbulb text-white text-lg md:text-xl"></i>
                             </div>
-                            <span class="text-gray-700 text-sm md:text-base font-medium text-center leading-tight">Custom Packages</span>
-                            <span class="text-gray-500 text-xs mt-1">(Open to unique ideas!)</span>
+                            <span class="text-black-700 text-sm md:text-base font-medium text-center leading-tight">Custom Packages</span>
+                            <span class="text-black-500 text-xs mt-1">(Open to unique ideas!)</span>
                         </div>
                     </div>
                 </div>
@@ -354,14 +356,14 @@
                         <div class="w-16 h-16 bg-gradient-to-br from-rose-400 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i class="fas fa-rocket text-white text-2xl"></i>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Ready to Collaborate?</h3>
-                        <p class="text-gray-600 mb-8 text-base md:text-lg max-w-xl mx-auto">Let's create something amazing together! I'm excited to bring your brand vision to life.</p>
-                        <a href="mailto:Delannarichardson9@gmail.com" class="btn-primary text-white font-semibold py-4 px-8 md:py-5 md:px-10 rounded-full hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 inline-flex items-center justify-center group relative overflow-hidden text-base md:text-lg">
+                        <h3 class="text-2xl md:text-3xl font-bold text-black-800 mb-4">Ready to Collaborate?</h3>
+                        <p class="text-black-600 mb-8 text-base md:text-lg max-w-xl mx-auto">Let's create something amazing together! I'm excited to bring your brand vision to life.</p>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Delannarichardson9@gmail.com&su=Partnership%20Collaboration%20Opportunity&body=Hi%20Delanna,%0D%0A%0D%0AI%20interested%20in%20collaborating%20with%20you%20on%20a%20project.%20I%20would%20love%20to%20discuss%20how%20we%20can%20work%20together%20to%20bring%20my%20brand%20vision%20to%20life.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20discussion.%0D%0A%0D%0ABest%20regards" target="_blank" class="btn-primary text-white font-semibold py-4 px-8 md:py-5 md:px-10 rounded-full hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 inline-flex items-center justify-center group relative overflow-hidden text-base md:text-lg">
                             <i class="fas fa-envelope mr-3 relative z-10"></i>
                             <span class="relative z-10">Start Our Partnership</span>
                             <div class="absolute inset-0 bg-gradient-to-r from-rose-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                         </a>
-                        <p class="text-gray-500 text-sm mt-4">Delannarichardson9@gmail.com</p>
+                        <p class="text-black-500 text-sm mt-4">Delannarichardson9@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -369,7 +371,7 @@
     </section>
 
     <!-- Storefront Section -->
-    <section id="store" class="py-12 md:py-16 bg-gray-50">
+    <section id="store" class="py-12 md:py-16 bg-black-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-12">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Shop My <span class="text-amber-500">Favorites</span></h2>
@@ -384,9 +386,9 @@
                     </div>
                     <div class="p-2 sm:p-3 md:p-4">
                         <h3 class="font-bold text-xs sm:text-sm mb-1 group-hover:text-rose-400 transition-colors duration-300">Gym Accessories</h3>
-                        <p class="text-gray-600 text-xs mb-1 sm:mb-2">See all 9 items</p>
+                        <p class="text-black-600 text-xs mb-1 sm:mb-2">See all 9 items</p>
                         <div class="flex justify-end">
-                            <i class="fas fa-heart text-gray-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
+                            <i class="fas fa-heart text-black-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
                         </div>
                     </div>
                 </a>
@@ -398,9 +400,9 @@
                     </div>
                     <div class="p-2 sm:p-3 md:p-4">
                         <h3 class="font-bold text-xs sm:text-sm mb-1 group-hover:text-rose-400 transition-colors duration-300">Mercedes/C300...</h3>
-                        <p class="text-gray-600 text-xs mb-1 sm:mb-2">See all 10 items</p>
+                        <p class="text-black-600 text-xs mb-1 sm:mb-2">See all 10 items</p>
                         <div class="flex justify-end">
-                            <i class="fas fa-heart text-gray-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
+                            <i class="fas fa-heart text-black-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
                         </div>
                     </div>
                 </a>
@@ -412,9 +414,9 @@
                     </div>
                     <div class="p-2 sm:p-3 md:p-4">
                         <h3 class="font-bold text-xs sm:text-sm mb-1 group-hover:text-rose-400 transition-colors duration-300">Sun Protection</h3>
-                        <p class="text-gray-600 text-xs mb-1 sm:mb-2">See all 12 items</p>
+                        <p class="text-black-600 text-xs mb-1 sm:mb-2">See all 12 items</p>
                         <div class="flex justify-end">
-                            <i class="fas fa-heart text-gray-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
+                            <i class="fas fa-heart text-black-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
                         </div>
                     </div>
                 </a>
@@ -426,9 +428,9 @@
                     </div>
                     <div class="p-2 sm:p-3 md:p-4">
                         <h3 class="font-bold text-xs sm:text-sm mb-1 group-hover:text-rose-400 transition-colors duration-300">Girl Products</h3>
-                        <p class="text-gray-600 text-xs mb-1 sm:mb-2">See all 46 items</p>
+                        <p class="text-black-600 text-xs mb-1 sm:mb-2">See all 46 items</p>
                         <div class="flex justify-end">
-                            <i class="fas fa-heart text-gray-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
+                            <i class="fas fa-heart text-black-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
                         </div>
                     </div>
                 </a>
@@ -440,9 +442,9 @@
                     </div>
                     <div class="p-2 sm:p-3 md:p-4">
                         <h3 class="font-bold text-xs sm:text-sm mb-1 group-hover:text-rose-400 transition-colors duration-300">Influencer</h3>
-                        <p class="text-gray-600 text-xs mb-1 sm:mb-2">See all 28 items</p>
+                        <p class="text-black-600 text-xs mb-1 sm:mb-2">See all 28 items</p>
                         <div class="flex justify-end">
-                            <i class="fas fa-heart text-gray-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
+                            <i class="fas fa-heart text-black-300 hover:text-pink-400 transition-colors duration-300 text-xs sm:text-sm"></i>
                         </div>
                     </div>
                 </a>
@@ -472,10 +474,10 @@
                     </p>
                     <!-- Social Media -->
                     <div class="flex space-x-4">
-                        <a href="https://www.instagram.com/del_cartier" target="_blank" class="text-gray-400 hover:text-pink-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 p-3 rounded-full hover:bg-white hover:bg-opacity-10">
+                        <a href="https://www.instagram.com/del_cartier" target="_blank" class="text-black-400 hover:text-pink-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 p-3 rounded-full hover:bg-white hover:bg-opacity-10">
                             <i class="fab fa-instagram text-2xl md:text-3xl"></i>
                         </a>
-                        <a href="mailto:Delannarichardson9@gmail.com" class="text-gray-400 hover:text-rose-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 p-3 rounded-full hover:bg-white hover:bg-opacity-10">
+                        <a href="mailto:Delannarichardson9@gmail.com" class="text-black-400 hover:text-rose-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 p-3 rounded-full hover:bg-white hover:bg-opacity-10">
                             <i class="fas fa-envelope text-2xl md:text-3xl"></i>
                         </a>
                     </div>
@@ -485,31 +487,31 @@
                 <div>
                     <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="#home" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="#home" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-home mr-2 text-rose-400 group-hover:text-rose-300 transition-colors duration-300"></i>
                             Home
                         </a></li>
-                        <li><a href="#about" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="#about" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-user mr-2 text-rose-400 group-hover:text-rose-300 transition-colors duration-300"></i>
                             About
                         </a></li>
-                        <li><a href="content-filming.html" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="content-filming.html" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-video mr-2 text-amber-400 group-hover:text-amber-300 transition-colors duration-300"></i>
                             Content Filming
                         </a></li>
-                        <li><a href="del-cartier-academy.html" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="del-cartier-academy.html" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-graduation-cap mr-2 text-amber-400 group-hover:text-amber-300 transition-colors duration-300"></i>
                             Academy
                         </a></li>
-                        <li><a href="media-management.html" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="media-management.html" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-tasks mr-2 text-amber-400 group-hover:text-amber-300 transition-colors duration-300"></i>
                             Media Management
                         </a></li>
-                        <li><a href="#partnerships" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="#partnerships" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-handshake mr-2 text-rose-400 group-hover:text-rose-300 transition-colors duration-300"></i>
                             Partnerships
                         </a></li>
-                        <li><a href="#store" class="text-gray-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
+                        <li><a href="#store" class="text-black-300 hover:text-rose-300 transition-colors duration-300 text-base md:text-lg flex items-center group">
                             <i class="fas fa-shopping-bag mr-2 text-amber-400 group-hover:text-amber-300 transition-colors duration-300"></i>
                             Storefront
                         </a></li>
@@ -523,8 +525,8 @@
                         <li class="flex items-start group">
                             <i class="fas fa-envelope text-rose-400 mt-1 mr-3 text-lg group-hover:text-rose-300 transition-colors duration-300"></i>
                             <div>
-                                <p class="text-gray-400 text-xs uppercase tracking-wide mb-1">Email</p>
-                                <a href="mailto:Delannarichardson9@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-300 text-base md:text-lg break-all">
+                                <p class="text-gray-100 text-xs uppercase tracking-wide mb-1">Email</p>
+                                <a href="mailto:Delannarichardson9@gmail.com" class="text-black-300 hover:text-white transition-colors duration-300 text-base md:text-lg break-all">
                                     Delannarichardson9@gmail.com
                                 </a>
                             </div>
@@ -532,8 +534,8 @@
                         <li class="flex items-start group">
                             <i class="fas fa-phone-alt text-amber-400 mt-1 mr-3 text-lg group-hover:text-amber-300 transition-colors duration-300"></i>
                             <div>
-                                <p class="text-gray-400 text-xs uppercase tracking-wide mb-1">Phone</p>
-                                <a href="tel:+15551234567" class="text-gray-300 hover:text-white transition-colors duration-300 text-base md:text-lg">
+                                <p class="text-gray-100 text-xs uppercase tracking-wide mb-1">Phone</p>
+                                <a href="tel:+15551234567" class="text-black-300 hover:text-white transition-colors duration-300 text-base md:text-lg">
                                     (555) 123-4567
                                 </a>
                             </div>
@@ -546,17 +548,17 @@
             <div class="border-t border-gray-700 mt-12 md:mt-16 pt-8 md:pt-10">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <div class="text-center md:text-left">
-                        <p class="text-gray-400 text-sm md:text-base">
+                        <p class="text-gray-100 text-sm md:text-base">
                             © 2023 Delanna's Media Productions. All rights reserved.
                         </p>
-                        <p class="text-gray-500 text-xs md:text-sm mt-1">
+                        <p class="text-gray-100 text-xs md:text-sm mt-1">
                             Crafted with ❤️ for visual storytelling
                         </p>
                     </div>
                     
                     <!-- Call to Action -->
                     <div class="text-center">
-                        <a href="mailto:Delannarichardson9@gmail.com" class="inline-flex items-center bg-gradient-to-r from-rose-500 to-amber-500 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-base">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Delannarichardson9@gmail.com&su=Let's%20Collaborate%20-%20Partnership%20Opportunity&body=Hi%20Delanna,%0D%0A%0D%0AI%20would%20love%20to%20collaborate%20with%20you%20on%20a%20project.%20I'm%20interested%20in%20discussing%20how%20we%20can%20work%20together%20to%20create%20amazing%20content.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20discussion.%0D%0A%0D%0ABest%20regards" target="_blank" class="inline-flex items-center bg-gradient-to-r from-rose-500 to-amber-500 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-base">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Let's Collaborate
                         </a>
@@ -566,5 +568,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+     <script src="script.js"></script>
 </body>
